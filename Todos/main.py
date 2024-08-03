@@ -17,7 +17,18 @@ st.subheader("This is my todo app.")
 st.write("This app is to increase your productivity.")
 
 # to render all the todos item on the page
-for todo in todos:
-    st.checkbox(todo)
+for index, todo in enumerate(todos):
+    #return key value pair (dict object)
+    checkbox = st.checkbox(todo, key=todo)
+    if checkbox:
+        todos.pop(index)
+        functions.write_file(todos)
+        #deletes a single key-value pair
+        del st.session_state[todo]
+        # reruns the app again.
+        st.rerun()
 
 user_todo = st.text_input(label='', placeholder="Add a todo item", on_change=add_todo, key="new_todo")
+
+#to print all the items in dictionary
+# st.session_state
