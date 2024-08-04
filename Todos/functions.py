@@ -1,11 +1,13 @@
-def read_file(filePath="todos.txt"):
+FILEPATH = 'todos.txt'
+
+def read_file(filePath=FILEPATH):
     """Read the file and returns a list of todo items"""
     with open(filePath, "r") as file:
         todos = file.readlines()
     return todos
 
 # print(help(read_file))
-def write_file(todoItems, filePath="todos.txt"):
+def write_file(todoItems, filePath=FILEPATH):
     """Write the todo item in the text file"""
     with open(filePath, "w") as file:
         file.writelines(todoItems)
