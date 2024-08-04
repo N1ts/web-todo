@@ -5,7 +5,6 @@ def read_file(filePath="todos.txt"):
     return todos
 
 # print(help(read_file))
-
 def write_file(todoItems, filePath="todos.txt"):
     """Write the todo item in the text file"""
     with open(filePath, "w") as file:

@@ -20,6 +20,7 @@ st.write("This app is to increase your productivity.")
 for index, todo in enumerate(todos):
     #return key value pair (dict object)
     checkbox = st.checkbox(todo, key=todo)
+    # print(f"checkbox: {checkbox}")
     if checkbox:
         todos.pop(index)
         functions.write_file(todos)

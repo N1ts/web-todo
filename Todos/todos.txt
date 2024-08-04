@@ -1,7 +1,5 @@
-item 1
-item 2
-item 3
-item 4
-item 5
-item 7
-item 8
+Learn python everyday with at least 30 mins of code
+Exercise daily in the morning
+Have high protein diet during the day
+Plan & finish office tasks within time office hours
+Play volleyball in the evening
